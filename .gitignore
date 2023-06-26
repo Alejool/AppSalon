@@ -3,3 +3,5 @@ src
 vendor
 package-lock.json
 composer.lock
+.env
+
