@@ -20,4 +20,20 @@ class Servicios extends ActiveRecord{
     
   }
 
+  public function validarForm(){
+   
+    if(!$this->nombre){
+      self::$alertas['error'][]='El nombre no puede estar vacío';
+    }
+    if(!$this->precio){
+      self::$alertas['error'][]='El precio no puede estar vacío';
+    }
+    if($this->precio && !is_numeric($this->precio)){
+      self::$alertas['error'][]='el precio debe ser solo números';
+    }
+
+    return self::$alertas;
+  
+  }
+
 }
