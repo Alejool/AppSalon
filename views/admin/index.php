@@ -52,7 +52,7 @@
                     <div class="citap__title">
                         <p class="citap__nombre"><?php echo $cita->nombreCompleto ?> </p>
                         <form 
-                            class="form citap__form"          
+                            class="form citap__form form__noMarginTop"          
                             action="/api/eliminar"
                             method="POST">
                             <input 
@@ -60,8 +60,8 @@
                             name="id" value="<?php echo $cita->id;?>">
                             <button 
                                 type='submit' 
-                                class="btn-eliminar" 
-                                ><i class="bi bi-x-square"></i> </button>
+                                class="btn-eliminar form_noMarginTop" 
+                                ><i class="bi bi-trash3"> </i> </button>
                         </form>
                     </div>
 
