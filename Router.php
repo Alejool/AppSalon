@@ -22,15 +22,12 @@ class Router
         // Proteger Rutas...
         session_start();
 
-        // Arreglo de rutas protegidas...
-        // $rutas_protegidas = ['/admin', '/propiedades/crear', '/propiedades/actualizar', '/propiedades/eliminar', '/vendedores/crear', '/vendedores/actualizar', '/vendedores/eliminar'];
-
         // $auth = $_SESSION['login'] ?? null;
 
         $currentUrl = $_SERVER['PATH_INFO'] ?? '/';
-    
-        
-        ; //verificar para subir a 000webhost usar el REQUEST['PATH_INFO']
+        //verificar para subir a 000webhost usar el REQUEST['PATH_INFO']
+
+        // $currentUrl = $_SERVER['REQUEST_URI'] === '' ? '/': $_SERVER['REQUEST_URI']; es la config para algunos servidores que no permiten el $_SERVER['PATH_INFO'] ?? '/';
         $method = $_SERVER['REQUEST_METHOD'];
 
         if ($method === 'GET') {

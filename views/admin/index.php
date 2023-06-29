@@ -58,10 +58,10 @@
                             <input 
                             type='hidden'
                             name="id" value="<?php echo $cita->id;?>">
-                            <input 
+                            <button 
                                 type='submit' 
                                 class="btn-eliminar" 
-                                value='X'>
+                                ><i class="bi bi-x-square"></i> </button>
                         </form>
                     </div>
 

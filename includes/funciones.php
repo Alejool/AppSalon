@@ -32,10 +32,8 @@ function isAdmin():void{
     }
 }
 
-function verificarAdmin(){
+function verificarAdmin():void{
     if (isset($_SESSION['admin'] )){
-
-        
         header('location: /admin');
     }
 }

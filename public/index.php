@@ -12,9 +12,7 @@ use Controllers\servicioControllers;
 
 $router = new Router();
 
-
 // crear rutas
-
 /** Iniciar sesión */
 $router->get('/', [loginControllers::class, 'login']);
 $router->post('/', [loginControllers::class, 'login']);
@@ -22,7 +20,7 @@ $router->get('/logout', [loginControllers::class, 'logout']);
 
 /** Recuperar password*/
 $router->get('/olvidar', [loginControllers::class, 'olvidar']);
-$router->post('/olvidar', [loginControllers::class, 'olvidar']);
+$router->post('/olvidar', [loginControllers::class,  'olvidar']);
 $router->get('/recuperar', [loginControllers::class, 'recuperar']);
 $router->post('/recuperar', [loginControllers::class, 'recuperar']);
 

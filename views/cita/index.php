@@ -34,7 +34,7 @@
     </div>
 
     <form 
-      class="form form__style" 
+      class="form form__style form__noMarginTop" 
       method="POST"
       action="/api/citas"
       >
