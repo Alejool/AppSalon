@@ -24,7 +24,7 @@ class Router
 
         // $auth = $_SESSION['login'] ?? null;
 
-        $currentUrl = $_SERVER['PATH_INFO'] ?? '/';
+        $currentUrl =strtok($_SERVER['REQUEST_URI'], '?') ?? '/';
         //verificar para subir a 000webhost usar el REQUEST['PATH_INFO']
 
         // $currentUrl = $_SERVER['REQUEST_URI'] === '' ? '/': $_SERVER['REQUEST_URI']; es la config para algunos servidores que no permiten el $_SERVER['PATH_INFO'] ?? '/';

@@ -1,0 +1,29 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.paginacion {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 3rem;
+ 
+
+}
+#anterior {
+  grid-column: 1/2;
+ 
+}
+
+#siguiente {
+  grid-column: 2/3;
+ 
+}
+
+.ocultar {
+  display: none;
+}
+
+.mostrar {
+  display: block;
+}

@@ -1,0 +1,94 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.form {
+  margin-top: 7rem;
+
+  &__noMarginTop {
+    margin-top: 0;
+  }
+  
+  &__style {
+    background-color: darken(v.$azul, 35%);
+    box-shadow:inset  -2px 1px 10px -5px v.$blanco;
+    padding: 1rem 2rem;
+    border-radius: 1rem ;
+  }
+
+  &__fieldset {
+    border-radius: .5rem;
+  }
+  &__legend {
+    padding: 1rem 2rem;
+    background-color: darken( v.$azul, 30%);
+  }
+  
+  &__campo {
+    padding-block: .7rem;
+    text-align: center;
+    
+
+    @include m.tablet {
+      display: flex;
+      align-items: center;
+      padding-block: 1rem;
+    }
+  }
+
+  &__campo--noflex {
+    @include m.tablet{
+      flex-direction: column;
+    }
+    
+    
+  }
+  &__label {
+    display: block;
+    padding: .5rem 0;
+    font-size: 1.7rem;
+
+    @include m.tablet {
+      text-transform: capitalize;
+      padding-right: 1.5rem;
+      flex: 0 0  10rem;
+      text-align: end; 
+    }
+
+  }
+
+  &__label--noflex {
+    @include m.tablet{
+      flex-direction: column;
+      flex: 0;
+      padding-block: 1.5rem;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    display: block;
+    border: none;
+    padding: calc(v.$separacion / 5);
+    border-radius: .7rem;
+    text-align: center;
+
+    &:disabled {
+      background-color: lighten(v.$negro, 20%);
+      color: v.$blanco;
+      cursor: not-allowed;
+
+    }
+
+    @include m.tablet {
+      flex:1;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  
+}

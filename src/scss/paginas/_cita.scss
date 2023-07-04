@@ -1,0 +1,65 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+
+
+
+.cita__seccion{
+  display: none;
+  text-align: center;
+  
+  @include m.desktop{
+    width: 75%;
+    margin: 0 auto;
+    
+  }
+}
+
+.mostrar {
+  display: block;
+}
+
+.ocultar {
+  display: none;
+}
+
+
+.cita__info {
+  padding: 2rem 0;
+  text-align: center;
+
+
+
+  @include m.phone{
+    display:grid;
+    grid-template-columns: 50% 45%;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+      display: block;
+      padding-top: .5rem;
+    }
+  }
+  
+  span {
+    color: v.$verde;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 1.7rem;
+  }
+
+  a{
+    @include m.boton (darken(v.$rojo, 10%), v.$blanco);
+    font-size: 1.6rem;
+
+    &:hover {
+      background-color: darken(v.$rojo, 20%);
+    }
+  }
+  
+
+
+}
+

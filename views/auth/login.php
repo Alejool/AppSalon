@@ -4,7 +4,7 @@
   <p class="pagina__descripcion">Inicia sesión con tus datos </p>
 
  
-  <form  class="form " method="POST" action="/">
+  <form  class="form form__noMarginTop" method="POST" action="/">
    <?php  include_once __DIR__ . "/../templates/alertas.php"?>
     
         <div class="form__campo ">

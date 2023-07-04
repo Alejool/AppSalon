@@ -1,0 +1,15 @@
+
+
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+
+.acciones {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  
+   
+}

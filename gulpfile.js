@@ -78,3 +78,4 @@ exports.watch = parallel(watchcss, watchjs, javascript);
 exports.watchArchivos = watchArchivos;
 exports.default = parallel(css, javascript, imagenes, versionWebp, watchArchivos); 
 exports.img= parallel(imagenes, versionWebp)
+exports.build= parallel(css, javascript, imagenes,versionWebp )

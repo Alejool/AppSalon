@@ -5,7 +5,7 @@
 
   <?php  include_once __DIR__ . "/../templates/alertas.php"?>
 
-  <form  class="form  " method="POST" >
+  <form  class="form form__noMarginTop " method="POST" >
 
       <div class="form__campo ">
             <label for="nombre" class="form__label">Nombre</label>

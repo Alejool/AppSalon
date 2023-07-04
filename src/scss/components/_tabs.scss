@@ -1,0 +1,38 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+
+.tabs {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 4rem;
+
+  @include m.desktop{
+    display: flex;
+    gap: .4rem;
+    justify-content: space-between;
+  }
+  
+  
+
+  button {
+    all: unset;
+    padding: 1.2rem 0 ;
+    background-color: lighten(v.$negro, 30%);
+    width: 100%;
+    text-align: center;
+    transition: background-color .5s;
+    margin-bottom: .5rem;
+    border-radius: .5rem;
+    
+
+    &:hover { 
+      cursor: pointer;
+      background-color: lighten(v.$negro, 10%);
+    }
+  }
+
+  .actual {
+    background-color: lighten(v.$negro, 9%);
+  }
+}
