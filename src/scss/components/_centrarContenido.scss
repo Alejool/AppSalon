@@ -1,0 +1,12 @@
+@use 'base/mixins' as m;
+
+ .login {
+  padding-bottom: 3rem;
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.login {
+  top:20%
+}

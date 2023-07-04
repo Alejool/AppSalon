@@ -1,0 +1,32 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.btn {
+  @include m.boton (v.$azul, v.$blanco);
+
+}
+.btn-edit {
+  all: unset;
+  @include m.boton(v.$verde, v.$blanco);
+}
+
+.btn-eliminar {
+  @include m.boton(v.$rojo, v.$blanco);
+  
+}
+
+.btn-eliminar, .btn-edit {
+  display: inline;
+  padding: .9rem 1.4rem;
+  margin: 0;
+  width: auto;
+}
+
+
+
+.btn-servicios {
+  display: block;
+  width: 100%;
+  margin-top: 3rem;
+}

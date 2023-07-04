@@ -1,0 +1,77 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.layout {
+  
+  &__contenedor{
+    @include m.tablet {
+      @include m.grid(2, 0);
+      height: 100%;
+
+    }
+  }
+
+  &__imagen {
+    min-height: 45rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    box-shadow: 0px 4px 10px 1px  lighten(v.$negro, 15%);;
+
+    @include m.tablet {
+      height: auto
+    }
+  }
+
+  &__login {
+    background-image: url('../img/3.webp'); 
+  }
+    
+  &__cita {
+     background-image: url('../img/2.webp');
+  }
+
+  &__admin {  
+    background-image: url('../img/1.webp');
+  }
+
+  &__servicios {  
+    background-image: url('../img/4.webp');
+  }
+
+    
+
+  &__app {
+   
+    @if ".login"{
+      position: relative;
+    }
+    
+    width: 95%;
+    margin: 0 auto;
+    padding: 4rem 0;
+    
+    
+    @include m.phone {
+      width: 90%;
+      padding: 2rem 0;
+    }
+    @include m.tablet {
+      padding: 0;
+      overflow-y: scroll;
+    }
+
+
+    @include m.tv{
+      width: 70%;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+
+

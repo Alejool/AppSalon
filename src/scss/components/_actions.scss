@@ -1,0 +1,26 @@
+
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.actions {
+  
+  @include m.phone {
+    display: flex;
+    gap: .5rem;
+    justify-content: space-between;
+  }
+  
+}
+.option {
+  display: block;
+  text-align:  center;
+  padding: .5rem 0;
+  margin: 1rem 2rem;
+  color: v.$blanco;
+  font-size: 1.4rem;
+
+  @include m.phone {
+    margin: .2rem 0;
+  }
+}

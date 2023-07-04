@@ -1,0 +1,30 @@
+
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.barra-admin {
+
+  @include m.phone{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+  }
+  @include m.tablet {
+    display: block;
+  }
+
+  @include m.desktop {
+    display: flex;
+    
+  }
+  
+  a {
+    font-size: 1.5rem;
+  }
+
+  
+
+}

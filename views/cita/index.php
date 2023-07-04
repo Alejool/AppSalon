@@ -6,7 +6,8 @@
 ?>
 
 <h1 class="pagina__title">Agenda tu cita</h1>
-<p class="descripcon-pagina"> Elegi tus servicios para tu cita y llena tus datos</p>
+ <?php include_once __DIR__. '/../templates/bienvenida.php'; ?>
+<p class="descripcon-pagina"> Elige tus servicios para tu cita y llena tus datos</p>
 
 
 <div id='cita_app '>

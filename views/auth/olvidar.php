@@ -4,7 +4,7 @@
   <p class="pagina__descripcion">Cambia tu contraseña </p>
 
 
-  <form  class="form " method="POST" >
+  <form  class="form form__noMarginTop " method="POST" >
 
   <?php  include_once __DIR__ . "/../templates/alertas.php"?>
   

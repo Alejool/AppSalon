@@ -1,0 +1,39 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+
+.resumen {
+
+  &__info {
+      
+    span {
+      color: v.$azul;
+      font-weight: bold;
+    }
+  }
+
+  &__insertado {
+    margin-top: 3rem;
+    padding: 2rem 1rem;
+    background-color: lighten(v.$negro, 7%);
+    box-shadow: -1px 1px 5px 0px v.$azul;
+  }
+
+  &__enviar {
+    display: block;
+    width: 100%;
+  
+    @include m.boton (v.$azul, v.$blanco);
+
+    margin-top: 4rem;
+    margin-bottom: 0;
+  
+    @include m.tablet{
+      width: 100%;
+    }
+    
+    
+  }
+}
+
+

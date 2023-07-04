@@ -1,0 +1,13 @@
+
+
+
+
+@keyframes ocultar {
+  0% {
+    display: block;
+    transform: translateX(3rem);
+  }
+  100% {
+    display: none;
+  }
+}

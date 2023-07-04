@@ -1,0 +1,66 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+
+.listado-servicios {
+  margin-bottom: 5rem;
+  
+  @include m.phone{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  
+}
+
+.servicio {
+  text-align: center;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  background-color: lighten(v.$negro, 20%);
+  border-radius: 1rem;
+  transition: background-color,transform, display .5s;
+
+  @include m.tablet{
+    padding: 1rem 0;
+    margin-bottom: 0;
+  }
+
+  
+  
+  
+
+  p {
+    margin: 1.2rem;
+  }
+  &__precio {
+    color: v.$azul ;
+    font-weight: v.$bold;
+    transition: transform, color, background-color .3s;
+
+    
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color:v.$negro;
+    transform: scale(.9);
+  }
+
+  &-hover {
+    
+    &:hover {
+      cursor: default;
+      background-color: lighten(v.$negro, 25%);
+      transform: none;
+    }
+    
+  }
+
+
+  &__seleccionado {
+    background-color:v.$negro;
+
+  }
+}

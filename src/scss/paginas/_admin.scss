@@ -1,0 +1,104 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+
+.citas {
+
+  &__title {
+    margin-top: 5rem;
+    font-size: 3.5rem;
+  }
+  
+  &__citas {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+  }
+  &__nohay {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+}
+
+
+
+.citap {
+  text-align: center;
+
+ 
+ 
+  p {
+    color: lighten(v.$azul, 10%);
+    font-size: 1.6rem;   
+    
+  }
+
+  padding: 2rem;
+  background-color: darken(v.$azul, 34%);
+  box-shadow:inset 0 1px 8px -3px v.$azul;
+  margin-bottom: 1.5rem;
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items:center;
+
+    p {
+      font-size: 2rem;
+      color: darken( v.$verde, 7%);
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+  }
+
+  span {
+    color: v.$blanco;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  &__servicios {
+    background-color: lighten(v.$negro, 10%);
+    padding: 1rem 2rem;
+    box-shadow: 0 -2px 12px -10px v.$blanco;
+  }
+
+  &__servicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__total {
+    border-radius: 2rem;
+    display: inline;
+
+    p {
+      color: darken(v.$rojo, 10%);
+      font-size: 2rem;
+      background-color: darken( v.$azul, 35%);
+      border-radius: 5rem;
+      padding: 1rem;
+      font-weight: bold;
+      box-shadow: inset 1px -2px 7px -5px v.$blanco;;
+    }
+
+    span {
+      font-size: 2.5rem;
+      font-weight: bold;  
+    }
+
+  }
+
+  &__form {
+
+    .btn-eliminar {
+      font-size: 2rem;
+    }
+  }
+
+}
+
